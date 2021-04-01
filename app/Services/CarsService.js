@@ -4,7 +4,6 @@ import Car from "../Models/Car.js";
 
 class CarsService {
   createCar(newCar) {
-    debugger
     let car = new Car(newCar.make, newCar.model, newCar.year, newCar.price, newCar.description, newCar.imgUrl)
     ProxyState.cars = [...ProxyState.cars, car]
   }
